@@ -1,0 +1,45 @@
+
+html {
+    display: flex;
+    min-width: 320px;
+    min-height: 800px;
+} 
+
+header {
+    display:block;
+    text-align: center;
+    margin-top: 15px;
+}
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #434343, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(45deg, #3e3e3e, #000000);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: auto;
+    
+    
+}
+
+.main-text {
+    min-height: 100px;
+    margin-top: 65px;
+    padding: 10px;
+    display: center;
+}
+.main-text h1 {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.start-button {
+    align-items:center;
+    text-align: center;
+    border: #ffffff;
+    border-style: solid;
+    margin-top: 50px;
+    max-width: 300px;
+}
