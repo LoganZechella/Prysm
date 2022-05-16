@@ -28,7 +28,6 @@ body {
     min-height: 100px;
     margin-top: 65px;
     padding: 10px;
-    display: center;
 }
 .main-text h1 {
     box-sizing: border-box;
@@ -36,10 +35,15 @@ body {
 }
 
 .start-button {
-    align-items:center;
-    text-align: center;
+    align-items: center;
     border: #ffffff;
     border-style: solid;
     margin-top: 50px;
     max-width: 300px;
+}
+
+button button.get-started {
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
