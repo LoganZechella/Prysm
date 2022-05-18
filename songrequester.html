@@ -8,17 +8,47 @@
     <link rel="stylesheet" href="requesterstyles.css">
     <title>Song Requester</title>
 </head>
-<body>
-    <header>Song Requester</header>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header text-light">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img class="header-logo-image" src="#" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <div class="main-text">
-            <h1>Request a song from `${djName}`</h1>
-            <div class="start-button">
-        <button class="get-started">Get Started</button>
-    </div>
-    </div>
-    
-    </div>
+        <main>
+            <section class="hero text-center text-light">
+                <div class="hero-bg"></div>
+                <div class="hero-particles-container">
+                    <canvas id="hero-particles"></canvas>
+                </div>
+                <div class="container-sm">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">Request a Song from DJ-NAME</DJNAME></h1>
+                            <p class="hero-paragraph">Press the button below to submit a song request!</p>
+                            <div class="hero-cta">
+                                <a class="button button-primary button-wide-mobile" href="#">Request</a>
+                            </div>
+                        </div>
+                        <div class="mockup-container">
+                            <div class="mockup-bg">
+                                <img src="dist/images/iphone-hero-bg.svg" alt="iPhone illustration">
+                            </div>
+                            <img class="device-mockup" src="dist/images/iphone-hero.png" alt="iPhone Hero">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
 </body>
 </html>
