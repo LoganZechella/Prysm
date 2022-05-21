@@ -7,6 +7,10 @@ div {
     border: dashed #ffffff;
     display: flexbox;
 }
+span {
+    display: flexbox;
+}
+
 .boxed-container {
     display: flexbox;
     align-items: center;
@@ -24,18 +28,14 @@ div {
     color: white;
 }
 
-.navbar, .navbar:enabled {
+.navbar {
     overflow: hidden;
+    float: left;
     background-color: #333;
     width: 200px;
-    min-height: 800px;
+    min-height: 1000px;
 }
-.navbar:enabled {
-    overflow: hidden;
-    background-color: #333;
-    width: 200px;
-    min-height: 800px;
-}
+
 /* Navbar links */
 .sidebar-home a {
     float: left;
@@ -61,7 +61,58 @@ div {
 }
 
 .main-viewing-area {
+    display: flexbox;
     height: auto;
-    min-height: 800px;
+    min-height: 1000px;
     width: auto;
+}
+
+.suggested-events {
+    display: inline-block;
+}
+
+.suggested-event-one {
+    height: 700px;
+    width: 400px;
+    margin-left: 35px;
+    margin-top: 35px;
+    color: white;
+    text-align: center;
+}
+.suggested-event-one > img {
+    width: 300px;
+    height: 500px;
+    margin-top: 25px;
+}
+
+.suggested-event-one-name {
+    text-decoration: underline;
+}
+
+.suggested-event-one-description {
+    text-align: center;
+}
+
+.suggested-event-two {
+    height: 700px;
+    width: 400px;
+    margin-left: 500px;
+    margin-top: 35px;
+    color: white;
+    text-align: center;
+    display: flexbox;
+}
+
+.suggested-event-two > img {
+    width: 300px;
+    height: 500px;
+    margin-top: 25px;
+}
+
+.suggested-event-two-name {
+    text-decoration: underline;
+}
+
+.suggested-event-two-description {
+    text-align: center;
 }
