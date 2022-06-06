@@ -2,14 +2,21 @@ body, html, footer {
     background: #000000;
     font-family: "Arial Rounded MT", "Helvetica Rounded LT Std", Arial, sans-serif;
     width: auto;
+    height: auto;
     color: #000;
 }
+
 div {
     border: dashed #ffffff;
     display: flexbox;
 }
 span {
     display: flexbox;
+}
+
+h1 {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
 
 .boxed-container {
@@ -19,43 +26,50 @@ span {
     width: auto;
 }
 
-header {
-    height: 100px;
-}
-
 .site-header {
     display: flex;
-    font-weight: bold;
-    font-size: 32px;
     align-items: center;
     justify-content: flex-start;
+    height: auto;
 }
 
 .header-inside {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    height: 100%;
-    width: fit-content;
+    width: 200px;
+    height: 75px;
 }
 
 .prysm-caps {
     display: flex;
-    justify-content: center;
     flex-wrap: nowrap;
     align-content: center;
     padding-left: 0.3em;
     padding-right: 0.3em;
     text-align: center;
     color: white;
+    font-weight: bold;
+    font-size: 2em;
+    justify-content: center;
 }
 
 .navbar {
     overflow: hidden;
+    display: flex;
     float: left;
     background-color: #333;
     width: 200px;
-    min-height: 1000px;
+    min-height: 752px;
+}
+
+.sidebar-home {
+    min-height: 100%;
+    display: flex;
+}
+
+.sidebar-home > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
 }
 
 /* Navbar links */
@@ -67,26 +81,16 @@ header {
     padding: 14px;
     text-decoration: none;
     align-items: center;
-    
+    justify-content: center;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky+.content {
-    padding-top: 60px;
-}
 
 /* Main Content Area */
 .main-viewing-area {
     display: flex;
     height: 100%;
-    min-height: 1000px;
+    min-height: auto;
     width: auto;
     overflow-y: scroll;
 }
@@ -94,14 +98,17 @@ header {
 .suggested-events {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding-bottom: 1em;
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    justify-content: space-evenly;
-    overflow-x: scroll;
+    justify-content: flex-start;
+    align-items: stretch;
     flex-basis: 100%;
+    overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .suggested-event-one {
@@ -109,9 +116,10 @@ header {
     width: 400px;
     color: white;
     text-align: center;
-    flex-basis: content;
     padding-left: 10px;
     padding-right: 10px;
+    flex: 0 0 auto;
+    margin-right: 1em;
 }
 .suggested-event-one > img {
     width: 300px;
@@ -132,9 +140,10 @@ header {
     width: 400px;
     color: white;
     text-align: center;
-    flex-basis: content;
     padding-left: 10px;
     padding-right: 10px;
+    flex: 0 0 auto;
+    margin-right: 1em;
 }
 
 .suggested-event-two > img {
@@ -156,9 +165,10 @@ header {
     width: 400px;
     color: white;
     text-align: center;
-    flex-basis: content;
     padding-left: 10px;
     padding-right: 10px;
+    flex: 0 0 auto;
+    margin-right: 1em;
 }
 
 .suggested-event-three>img {
@@ -179,6 +189,9 @@ header {
 
 .main-footer {
     width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-content {
@@ -189,4 +202,5 @@ header {
 
 .footer-text {
     color: #ffffff;
+    display: flex;
 }
