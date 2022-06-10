@@ -1,13 +1,2 @@
 /* Background */
 
-#bg-image-home {
-    pointer-events: none;
-    /* display: none;  */
-}
-
-body {
-    background-image: url(#bg-image-home);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}

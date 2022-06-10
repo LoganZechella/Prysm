@@ -10,6 +10,7 @@ div {
     border: dashed #ffffff;
     display: flexbox;
 }
+
 span {
     display: flexbox;
 }
@@ -19,7 +20,7 @@ h1 {
     margin-block-end: 0.5em;
 }
 
-.boxed-container {
+.container {
     display: flexbox;
     align-items: center;
     height: auto !important;

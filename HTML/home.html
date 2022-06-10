@@ -15,123 +15,50 @@
 </head>
 
 <body>
-  
-  <!-- Builder.io -->
-
-  <hero-background-img builderTag="hero-background-img" class="hero-background-img" data-name="hero-background-img-1">
-    <picture>
-      <source srcset="
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?format=webp&width=100   100w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?format=webp&width=200   200w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?format=webp&width=400   400w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?format=webp&width=800   800w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?format=webp&width=1200 1200w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?format=webp&width=1600 1600w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?format=webp&width=2000 2000w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0
-        " type="image/webp" />
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0"
-        srcset="
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?width=100   100w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?width=200   200w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?width=400   400w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?width=800   800w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?width=1200 1200w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?width=1600 1600w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0?width=2000 2000w,
-          https://cdn.builder.io/api/v1/file/assets%2Fanonymous%2Fe5b12f5fe82646e3a76b73a9ef17e5e0
-        " class="image" />
-    </picture>
-    <div class="builder-image-sizer image-sizer"></div>
-  </hero-background-img>
-  <style>
-    .hero-background-img {
-      display: flex;
-      position: sticky;
-      min-width: 20px;
-      min-height: 20px;
-      flex-direction: row;
-      max-width: 1440px;
-      justify-content: center;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-right: 10px;
-      padding-left: 10px;
-      background-color: rgba(0, 0, 0, 0);
-    }
-  
-    @media (max-width: 991px) {
-      .hero-background-img {
-        display: none;
-      }
-    }
-  
-    @media (max-width: 640px) {
-      .hero-background-img {
-        display: none;
-      }
-    }
-  
-    .image {
-      object-fit: contain;
-      object-position: center;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-    }
-  
-    .image-sizer {
-      width: 100%;
-      padding-top: 56.3%;
-      pointer-events: none;
-      font-size: 0;
-    }
-  </style>
-
+  <div class="container">    
   <!-- Header and Navbar -->
-  <header class="site-header">
-    <div class="header-inside">
-      <h1 class="prysm-caps">PRYSM</h1>
+    <header class="site-header">
+      <div class="header-inside">
+        <h1 class="prysm-caps">PRYSM</h1>
+      </div>
+    </header>
+    <div class="navbar">
+      <nav class="sidebar-home">
+        <ul>
+          <a href="#home">Home</a>
+          <a href="#search">Search</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#events">Events</a>
+          <a href="#recommended">Recommended</a>
+          <a href="#profile">Profile</a>
+          <a href="#settings">Settings</a>
+        </ul>
+      </nav>
     </div>
-  </header>
-  <div class="navbar">
-    <nav class="sidebar-home">
-      <ul>
-        <a href="#home">Home</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#events">Events</a>
-        <a href="#recommended">Recommended</a>
-        <a href="#profile">Profile</a>
-        <a href="#settings">Settings</a>
-      </ul>
-    </nav>
-  </div>
 
 <!-- Main Content Area -->
 
-  <div class="main-viewing-area">
-    <div class="suggested-events">
-      <div class="suggested-event-one">
-        <img src="#">
-        <h2 class="suggested-event-one-name">EVENT NAME</h2>
-        <h3 class="suggested-event-one-description">EVENT DESCRIPTION</h3>
-      </div>
-      <div class="suggested-event-two">
-        <img src="#">
-        <h2 class="suggested-event-two-name">EVENT NAME</h2>
-        <h3 class="suggested-event-two-description">EVENT DESCRIPTION</h3>
-      </div>
-      <div class="suggested-event-three">
-        <img src="#">
-        <h2 class="suggested-event-three-name">EVENT NAME</h2>
-        <h3 class="suggested-event-three-description">EVENT DESCRIPTION</h3>
+    <div class="main-viewing-area">
+      <div class="suggested-events">
+        <div class="suggested-event-one">
+          <img src="#">
+          <h2 class="suggested-event-one-name">EVENT NAME</h2>
+          <h3 class="suggested-event-one-description">EVENT DESCRIPTION</h3>
+        </div>
+        <div class="suggested-event-two">
+          <img src="#">
+          <h2 class="suggested-event-two-name">EVENT NAME</h2>
+          <h3 class="suggested-event-two-description">EVENT DESCRIPTION</h3>
+        </div>
+        <div class="suggested-event-three">
+          <img src="#">
+          <h2 class="suggested-event-three-name">EVENT NAME</h2>
+          <h3 class="suggested-event-three-description">EVENT DESCRIPTION</h3>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-
+    </div>
+  </div>  
 </body>
 
 <footer class="main-footer">
