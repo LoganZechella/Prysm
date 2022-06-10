@@ -15,50 +15,57 @@
 </head>
 
 <body>
-  <div class="container">    
+
   <!-- Header and Navbar -->
-    <header class="site-header">
-      <div class="header-inside">
-        <h1 class="prysm-caps">PRYSM</h1>
-      </div>
-    </header>
-    <div class="navbar">
-      <nav class="sidebar-home">
-        <ul>
-          <a href="#home">Home</a>
-          <a href="#search">Search</a>
-          <a href="#experiences">Experiences</a>
-          <a href="#events">Events</a>
-          <a href="#recommended">Recommended</a>
-          <a href="#profile">Profile</a>
-          <a href="#settings">Settings</a>
-        </ul>
-      </nav>
-    </div>
 
-<!-- Main Content Area -->
+  <header class="site-header">
+    <div class="header-logo">
+      <h1 class="prysm-caps">PRYSM</h1>
+    </div>
+    <div class="header-searchbar">
+      <input type="search" class="searchbar-input">
+    </div>
+    <div class="header-location">
+      <a href="#current-location">CURRENT LOCATION</a>
+    </div>
+  </header>
+  <div class="navbar">
+    <nav class="sidebar-home">
+      <ul>
+        <a href="#home">Home</a>
+        <a href="#search">Search</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#events">Events</a>
+        <a href="#recommended">Recommended</a>
+        <a href="#profile">Profile</a>
+        <a href="#settings">Settings</a>
+      </ul>
+    </nav>
+  </div>
 
-    <div class="main-viewing-area">
-      <div class="suggested-events">
-        <div class="suggested-event-one">
-          <img src="#">
-          <h2 class="suggested-event-one-name">EVENT NAME</h2>
-          <h3 class="suggested-event-one-description">EVENT DESCRIPTION</h3>
-        </div>
-        <div class="suggested-event-two">
-          <img src="#">
-          <h2 class="suggested-event-two-name">EVENT NAME</h2>
-          <h3 class="suggested-event-two-description">EVENT DESCRIPTION</h3>
-        </div>
-        <div class="suggested-event-three">
-          <img src="#">
-          <h2 class="suggested-event-three-name">EVENT NAME</h2>
-          <h3 class="suggested-event-three-description">EVENT DESCRIPTION</h3>
-        </div>
+  <!-- Main Content Area -->
+
+  <div class="main-viewing-area">
+    <div class="suggested-events">
+      <div class="suggested-event-one">
+        <img src="#">
+        <h2 class="suggested-event-one-name">EVENT NAME</h2>
+        <h3 class="suggested-event-one-description">EVENT DESCRIPTION</h3>
+      </div>
+      <div class="suggested-event-two">
+        <img src="#">
+        <h2 class="suggested-event-two-name">EVENT NAME</h2>
+        <h3 class="suggested-event-two-description">EVENT DESCRIPTION</h3>
+      </div>
+      <div class="suggested-event-three">
+        <img src="#">
+        <h2 class="suggested-event-three-name">EVENT NAME</h2>
+        <h3 class="suggested-event-three-description">EVENT DESCRIPTION</h3>
       </div>
     </div>
-    </div>
-  </div>  
+  </div>
+  </div>
+  </div>
 </body>
 
 <footer class="main-footer">
@@ -67,9 +74,17 @@
   </div>
 </footer>
 
+
 <!-- Bootstrap and jQuery Script Integrations -->
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 <script src="Scripts/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Carousel
+  $('input').on('change', function () {
+    $('body').toggleClass('blue');
+  });
+</script>
 
 </html>
