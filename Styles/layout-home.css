@@ -1,6 +1,50 @@
+:root {
+    --font: "Arial Rounded MT Bold", sans-serif;
+    --fontOrigin: 1rem;
+    /* 16px */
+    --fontSmall: 0.625em;
+    /* 10px */
+    --fontMedium: 0.875em;
+    /* 14px */
+    --fontNormal: 1em;
+    /* 16px */
+    --fontLarge: 1.375em;
+    /* 22px */
+    --fontLight: 100;
+    --fontRegular: 400;
+    --speed: 0.65s;
+    --headline-gradient-start: #194BB5;
+    --headline-gradient-end: #009DE4;
+    --headline-gradient-shimmer: #5AC8FA;
+    --gradient-highlight-spread: 20%;
+    --gradient-shimmer-angle: 100deg;
+    --gradient-position-start: 140;
+    --gradient-position-end: -40;
+}
 
+@keyframes zoom {
+    from {
+        object-position: 0 50%;
+    }
 
-body, html, footer {
+    to {
+        object-position: 100% 50%;
+    }
+}
+
+@keyframes blur {
+    from {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+
+    to {
+        -webkit-transform: scale(1.5, 1.5);
+        transform: scale(2, 2);
+    }
+}
+
+html {
     background: #000000;
     font-family: "Arial Rounded MT", "Helvetica Rounded LT Std", Arial, sans-serif;
     width: auto;
@@ -9,7 +53,7 @@ body, html, footer {
 }
 
 div {
-    border: dashed #ffffff; 
+    /* border: dashed #ffffff;  */
     display: flexbox;
 }
 
@@ -75,18 +119,19 @@ h1 {
     float: left;
     background-color: #333;
     width: 200px;
-    min-height: 752px;
+    min-height: 600px;
 }
 
 .sidebar-home {
-    min-height: 100%;
+    min-height: 600px;
     display: flex;
+    padding-top: 1em;
 }
 
 .sidebar-home > ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 1rem;
 }
 
@@ -110,10 +155,10 @@ h1 {
  
 .main-viewing-area {
     display: flex;
-    height: auto;
-    min-height: auto;
+    height: 600px;
+    min-height: 400px;
     width: auto;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 
@@ -125,15 +170,15 @@ h1 {
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    justify-content: flex-start;
-    align-items: stretch;
+    justify-content: space-evenly;
+    align-items: center;
     flex-basis: 100%;
     overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-.suggested-event-one {
+/* .suggested-event-one {
     height: 700px;
     width: 400px;
     color: white;
@@ -205,5 +250,5 @@ h1 {
 
 .suggested-event-three-description {
     text-align: center;
-}
+} */
 

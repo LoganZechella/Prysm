@@ -12,6 +12,9 @@
   <link href="Styles/bootstrap.min.css" rel="stylesheet" type="text/html">
   <link href="http://fonts.cdnfonts.com/css/arial-rounded-mt" rel="stylesheet">
   <link href="http://fonts.cdnfonts.com/css/helvetica-rounded-lt-std" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="Scripts/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -47,8 +50,8 @@
 
   <div class="main-viewing-area">
     <div class="suggested-events">
-      <div class="suggested-event-one">
-        <img src="#">
+      <!-- <div class="suggested-event-one">
+        <img src="https://s8.gifyu.com/images/FT1-Song-Request-Poster.jpg" class="suggested-event-one-img">
         <h2 class="suggested-event-one-name">EVENT NAME</h2>
         <h3 class="suggested-event-one-description">EVENT DESCRIPTION</h3>
       </div>
@@ -61,7 +64,77 @@
         <img src="#">
         <h2 class="suggested-event-three-name">EVENT NAME</h2>
         <h3 class="suggested-event-three-description">EVENT DESCRIPTION</h3>
+      </div> -->
+      <div class="card" data-effect="zoom">
+        <button class="card__save  js-save" type="button">
+          <i class="fa  fa-bookmark"></i>
+        </button>
+        <figure class="card__image">
+          <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
+        </figure>
+        <div class="card__header">
+          <figure class="card__profile">
+            <img src="https://s8.gifyu.com/images/FT1-Song-Request-Poster.jpg"
+              alt="Event Flyer for first suggested event">
+          </figure>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">PRYSM Launch Party</h3>
+          <p class="card__job">PRYSM, LLC</p>
+          <p class="card__bio">The official launch party for PRYSM v1.0</p>
+        </div>
+        <div class="card__footer">
+          <p class="card__date">Fall 2022</p>
+          <p class=""></p>
+        </div>
       </div>
+
+      <div class="card2" data-effect="zoom">
+        <button class="card__save  js-save" type="button">
+          <i class="fa  fa-bookmark"></i>
+        </button>
+        <figure class="card__image">
+          <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
+        </figure>
+        <div class="card__header">
+          <figure class="card__profile">
+            <img src="https://s8.gifyu.com/images/FT1-Song-Request-Poster.jpg" alt="Event Flyer for first suggested event">
+          </figure>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">PRYSM Launch Party</h3>
+          <p class="card__job">PRYSM, LLC</p>
+          <p class="card__bio">The official launch party for PRYSM v1.0</p>
+        </div>
+        <div class="card__footer">
+          <p class="card__date">Fall 2022</p>
+          <p class=""></p>
+        </div>
+      </div>
+      
+      <div class="card3" data-effect="zoom">
+        <button class="card__save  js-save" type="button">
+          <i class="fa  fa-bookmark"></i>
+        </button>
+        <figure class="card__image">
+          <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
+        </figure>
+        <div class="card__header">
+          <figure class="card__profile">
+            <img src="https://s8.gifyu.com/images/FT1-Song-Request-Poster.jpg" alt="Event Flyer for first suggested event">
+          </figure>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">PRYSM Launch Party</h3>
+          <p class="card__job">PRYSM, LLC</p>
+          <p class="card__bio">The official launch party for PRYSM v1.0</p>
+        </div>
+        <div class="card__footer">
+          <p class="card__date">Fall 2022</p>
+          <p class=""></p>
+        </div>
+      </div>
+
     </div>
   </div>
   </div>
@@ -78,13 +151,8 @@
 <!-- Bootstrap and jQuery Script Integrations -->
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-<script src="Scripts/bootstrap.bundle.min.js"></script>
+<script src="../Scripts/bootstrap.bundle.min.js"></script>
 
-<script>
-  // Carousel
-  $('input').on('change', function () {
-    $('body').toggleClass('blue');
-  });
-</script>
+<script src="../Scripts/home-scripts.js"></script>
 
 </html>
