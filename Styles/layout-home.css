@@ -45,13 +45,15 @@
 }
 
 html {
-    background: #000000;
+    background-image: url(../Images/vimal-s-M6IOL-9hDE0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: "Arial Rounded MT", "Helvetica Rounded LT Std", Arial, sans-serif;
     width: auto;
     height: auto;
     color: #000;
 }
-
 
 div {
     /* border: dashed #ffffff;  */
@@ -144,6 +146,7 @@ h1 {
     cursor: pointer;
 }
 
+
 .line {
     position: absolute;
     width: 21px;
@@ -161,32 +164,26 @@ h1 {
     transform: translateY(7px);
 }
 
-
-
-.navbar {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    background-color: #333;
-    width: 200px;
-    min-height: 400px;
-}
-
-
-
 .sidebar-home {
     min-height: auto;
     display: flex;
-    padding-top: 0em;
+    padding-top: 1em;
+    overflow: hidden;
+    flex-direction: column;
+    float: left;
+    background-color: rgba(67, 67, 67, 0.322);
+    backdrop-filter: blur(50px);
+    width: 200px;
+    min-height: 100vh;
 }
 
 .sidebar-home>ul {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 0px;
 }
 
 
@@ -194,42 +191,45 @@ h1 {
 
 .sidebar-home a {
     float: left;
-    display: block;
+    display: flex;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px;
+    padding-bottom: 14px;
     text-decoration: none;
     align-items: center;
     justify-content: center;
 }
-
+.navbar-list a:hover {
+    color: #009DE4;
+    transition: 0.25s ease-out;
+    transform: scale(1.2, 1.2);
+}
 
 
 /* Main Content Area */
 
 .main-viewing-area {
     display: flex;
-    height: 620px;
+    height: 900px;
     min-height: 400px;
     width: auto;
     overflow-y: scroll;
+    backdrop-filter: blur(50px);
 }
 
 
 .suggested-events {
     display: flex;
     flex-direction: row;
+    height: 80vh;
     flex-wrap: wrap;
     padding-bottom: 0em;
     padding-top: 0em;
-    padding-left: 1em;
-    padding-right: 1em;
     justify-content: space-evenly;
-    align-items: center;
-    flex-basis: 100%;
+    align-items: baseline;
     overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .main-footer {

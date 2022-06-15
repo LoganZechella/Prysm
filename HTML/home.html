@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>PRYSM - Home</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/Styles/layout-home.css" rel="stylesheet" type="text/css">
@@ -13,9 +13,10 @@
   <link href="http://fonts.cdnfonts.com/css/arial-rounded-mt" rel="stylesheet">
   <link href="http://fonts.cdnfonts.com/css/helvetica-rounded-lt-std" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="Scripts/bootstrap.bundle.min.js"></script>
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous" defer></script>
+  <script src="Scripts/bootstrap.bundle.min.js" defer></script>
 </head>
+
 
 <body>
 
@@ -36,14 +37,14 @@
   <!-- Navbar -->
 
   <div class="navbar">
-    <label for="checkbox" class="hamburger">
-      <input type="checkbox" id="checkbox">
-      <span class="line line--top"></span>
-      <span class="line line--middle"></span>
-      <span class="line line--bottom"></span>
-    </label>
     <nav class="sidebar-home">
-      <ul>
+      <label for="checkbox" class="hamburger">
+        <input type="checkbox" id="checkbox">
+        <span class="line line--top"></span>
+        <span class="line line--middle"></span>
+        <span class="line line--bottom"></span>
+      </label>
+      <ul class="navbar-list">
         <a href="#home">Home</a>
         <a href="#search">Search</a>
         <a href="#experiences">Experiences</a>
