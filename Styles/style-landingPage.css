@@ -1,0 +1,51 @@
+:root {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded LT Std", Arial, sans-serif;
+    --palette-dark0: #001341;
+    --palette-dark1: #00396c;
+    --palette-dark2: #12629b;
+    --palette-light1: #B6DCF6;
+    --palette-light0: #E4F2FC;
+    background-color: #000;
+}
+
+.landing-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em 1em 1em;
+}
+
+.prysm-caps, .header-location {
+    color: var(--palette-light1);
+}
+
+.landing-entire-body {
+    background-image: url(../Images/vimal-s-M6IOL-9hDE0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 165vh;
+    width: auto;
+    transition: 30s ease-in-out;
+    animation: alternate-reverse;
+}
+
+.landing-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    backdrop-filter: blur(8px);
+}
+
+.hero-h1 {
+    color: var(--palette-light0);
+    margin-top: 2em;
+    text-align: center;
+    font-size: 60px;
+    color: #E4F2FC;
+}
+        
