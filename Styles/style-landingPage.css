@@ -7,9 +7,13 @@
     --palette-light0: #E4F2FC;
 }
 
+body {
+    margin: 0;
+}
+
 .landing-entire-body {
     background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
-    background-size: 300% 300%;
+    background-size: cover;
     -webkit-animation: Background 25s ease infinite;
     -moz-animation: Background 25s ease infinite;
     animation: Background 25s ease infinite;
@@ -57,27 +61,23 @@
     }
 }
 
-.full-screen {
+.landing-main {
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url(https://i.imgur.com/wCG2csZ.png);
-    background-size: cover;
-    background-position: center;
     width: 100%;
-    height: 100%;
-    display: -webkit-flex;
+    height: 100vh;
+    -webkit-display: flex;
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
+    /* -webkit-align-items: center; */
+    /* align-items: center; */
+    /* -webkit-justify-content: center; */
     justify-content: center;
     text-align: center;
     filter: saturate(1.6);
+    backdrop-filter: blur(20px);
+    overflow-y: scroll;
+    overflow-x: auto;
 }
 
 .landing-header {
@@ -86,7 +86,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1em 1em 1em;
+    padding: 0 1em 0 1em;
 }
 
 .prysm-caps, .landing-login-button {
@@ -94,7 +94,7 @@
 }
 
 .prysm-caps {
-    font-size: 45px;
+    font-size: 36px;
 }
 
 .header-login {
@@ -107,15 +107,22 @@
     font-size: 22px;
 }
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .hero-h1 {
     color: #fff;
+    text-shadow: rgba(0, 0, 0, .6);
     font-weight: 800;
     font-size: 4em;
     letter-spacing: -2px;
     text-align: center;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
-    margin-top: 2em;
-    text-align: center;
     font-size: 72px;
 }
 
@@ -132,7 +139,9 @@
     transition: all 0.5s ease;
     margin: 0 auto;
     display: block;
-    width: 100px;
+    width: 1fr;
+    background-color: rgba(89, 88, 88, 0.165);
+    border-radius: 19px;
 }
 
 .landing-button-signup:hover {
@@ -142,6 +151,6 @@
     background-color: rgba(108, 107, 107, 0.07);
     text-shadow: 0 4px 5px rgba(5, 218, 30, 0.228);
     text-decoration: solid;
-    border: 1px solid rgba(5, 218, 30, 0.536);
-    border-radius: 10%;
+    border: 3px solid rgba(5, 217, 30, 0.379);
+    border-radius: 19px;
 }
