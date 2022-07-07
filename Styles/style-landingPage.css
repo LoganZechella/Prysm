@@ -87,6 +87,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 1em 0 1em;
+    backdrop-filter: brightness(75%);
 }
 
 .prysm-caps, .landing-login-button {
