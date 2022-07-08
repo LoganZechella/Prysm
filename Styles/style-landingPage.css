@@ -61,6 +61,8 @@ body {
     }
 }
 
+/* Whole Page */
+
 .landing-main {
     position: fixed;
     width: 100%;
@@ -90,6 +92,12 @@ body {
     backdrop-filter: brightness(75%);
 }
 
+/* Navbar */
+
+
+
+/* Rest of landing-header Items */
+
 .prysm-caps, .landing-login-button {
     color: #fff;
 }
@@ -98,7 +106,7 @@ body {
     font-size: 36px;
 }
 
-.header-login {
+.landing-header-login {
     border: 2px solid rgba(255, 255, 255, 0.264);
     background-color: rgba(162, 161, 161, 0.264);
     padding: 0.5em;

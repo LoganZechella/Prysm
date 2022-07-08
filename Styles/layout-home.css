@@ -55,6 +55,10 @@ html {
     color: #000;
 }
 
+body {
+    margin: 0px 0px 0px 0px;
+}
+
 div {
     /* border: dashed #ffffff;  */
     display: flexbox;
@@ -165,7 +169,6 @@ h1 {
 }
 
 .sidebar-home {
-    min-height: auto;
     display: flex;
     padding-top: 1em;
     overflow: hidden;
@@ -206,17 +209,17 @@ h1 {
 }
 
 
+
 /* Main Content Area */
 
 .main-viewing-area {
     display: flex;
-    height: 900px;
+    height: 100vh;
     min-height: 400px;
     width: auto;
     overflow-y: scroll;
     backdrop-filter: blur(50px);
 }
-
 
 .suggested-events {
     display: flex;
@@ -228,13 +231,12 @@ h1 {
     justify-content: space-evenly;
     align-items: baseline;
     overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
 }
 
 .main-footer {
     color: #fff;
-    display: flex;
+    display: none;
     justify-content: center;
     background-color: rgba(167, 167, 167, 0.115);
 }
