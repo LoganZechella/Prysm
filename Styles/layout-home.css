@@ -80,6 +80,8 @@ h1 {
     width: 100%;
 }
 
+/* Header */
+
 .site-header {
     display: flex;
     align-items: center;
@@ -109,22 +111,18 @@ h1 {
     justify-content: center;
 }
 
-.header-searchbar {
-    width: 50%;
-}
-
-.searchbar-input {
-    width: 100%;
-}
-
 .header-location {
     justify-self: flex-end;
     margin-right: 1em;
 }
 
+.header-location>a {
+    color: #5AC8FA;
+}
+
 /* Navbar */
 
-#checkbox {
+/* #checkbox {
     display: none;
 }
 
@@ -144,7 +142,7 @@ h1 {
 .hamburger {
     position: relative;
     padding: 20px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -178,10 +176,15 @@ h1 {
     backdrop-filter: blur(50px);
     width: 200px;
     min-height: 100vh;
+} */
+
+.navbar-list {
+    justify-content: space-evenly;
 }
 
-.sidebar-home>ul {
-    display: flex;
+.navbar-list>ul {
+    display: block;
+    min-width: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -189,26 +192,18 @@ h1 {
     padding: 0px;
 }
 
+.navbar-list>a {
+    color: #fff;
+    padding: 0.3em;
+}
 
 /* Navbar links */
 
-.sidebar-home a {
-    float: left;
-    display: flex;
-    color: #f2f2f2;
-    text-align: center;
-    padding-bottom: 14px;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
+.navbar-list>a:hover {
+    transition: ease 0.5s;
+    border-bottom: #5AC8FA solid;
+    color: #5AC8FA;
 }
-.navbar-list a:hover {
-    color: #009DE4;
-    transition: 0.25s ease-out;
-    transform: scale(1.2, 1.2);
-}
-
-
 
 /* Main Content Area */
 
