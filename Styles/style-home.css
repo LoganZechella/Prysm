@@ -8,14 +8,14 @@
 .card3 {
     position: relative;
     grid-area: card;
-    align-self: center;
-    justify-self: center;
+    /* align-self: center; */
+    /* justify-self: center; */
     overflow: hidden;
     display: block;
     width: 100%;
     max-width: 300px;
     height: 400px;
-    margin: 0 1em 0 0;
+    margin: 0.5em 0 0.5em 0;
     font-size: var(--fontOrigin);
     border-radius: 8px;
     box-shadow: 8px 16px 60px rgba(197, 197, 197, 0.3);
@@ -28,9 +28,12 @@
 .card2:hover,
 .card3:hover {
     box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+    opacity: 1;
+    z-index: 3;
 }
+
 
 .card__save {
     position: absolute;
