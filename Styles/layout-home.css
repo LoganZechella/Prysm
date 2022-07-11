@@ -112,6 +112,7 @@
     }
 }
 
+
 html {
     background-image: url(../Images/vimal-s-M6IOL-9hDE0-unsplash.jpg);
     background-repeat: no-repeat;
@@ -139,7 +140,7 @@ span {
 .suggested-events {
     display: flexbox;
     align-items: center;
-    height: 100%;
+    height: 200vh;
     width: 100%;
 }
 
@@ -160,7 +161,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 0 0 1rem;
+    margin: 0;
     text-align: center;
 }
 
@@ -179,12 +180,7 @@ h2 {
 }
 
 .prysm-layers>li {
-    animation: rainbow 3s ease-in-out 5s;
-    animation-play-state: running;
-}
-
-.header-logo:hover {
-    animation-play-state: paused;
+    animation: rainbow 3s ease-in-out 10s;
 }
 
 .prysm-caps__layer {
@@ -274,32 +270,37 @@ h2 {
 /* Current Location */
 
 .header-location {
-    margin: 0 1em 0 1em;
-
+    margin: 0 0.5em 0 0;
+    flex-wrap: nowrap;
+    min-width: max-content;
 }
 
 .header-location>a {
-    color: #5AC8FA;
+    color: #fff;
+    font-size: 18px;
 }
 
 /* Navbar */
 
 .header-navbar {
-    flex-wrap: nowrap;
-    min-width: max-content;
+    flex-wrap: norap;
 }
 
 .navbar-list>ul {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    font-size: 18px;
+    font-size: 30px;
     padding: 0px;
 }
 
 .navbar-list>a {
     color: #fff;
-    font-size: 32px;
+    font-size: 30px;
+}
+
+#search-glyph {
+    display: none;
 }
 
 /* Navbar links */
@@ -307,8 +308,7 @@ h2 {
 .navbar-list {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
-
+    font-weight: 300;
 }
 
 .navbar-list * {
@@ -374,13 +374,13 @@ h2 {
 .suggested-events {
     display: flex;
     flex-direction: row;
-    height: 80vh;
-    flex-wrap: wrap;
+    height: 100vh;
+    flex-wrap: nowrap;
     padding-bottom: 0em;
     padding-top: 0em;
     justify-content: space-evenly;
     align-items: baseline;
-    overflow-x: scroll;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -389,4 +389,33 @@ h2 {
     display: none;
     justify-content: center;
     background-color: rgba(167, 167, 167, 0.115);
+}
+
+/* Responsive Layout Rules */
+
+@media screen and (max-width: 900px) {
+    .header-navbar {
+        display: none;
+    }
+
+    #location-glyph {
+        margin-right: 0.5em;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .window {
+        display: none;
+    }
+
+    .header-logo {
+        margin-left: 1em;
+    }
+
+     #location-glyph {
+        margin-right: 0.5em;
+        z-index: 1;
+    }
+
 }
