@@ -119,7 +119,7 @@ html {
     background-size: cover;
     background-position: center;
     font-family: "Arial Rounded MT", "Helvetica Rounded LT Std", Arial, sans-serif;
-    width: auto;
+    width: 100vw;
     height: auto;
     color: #000;
 }
@@ -356,10 +356,9 @@ ul {
     border-bottom: 3px solid #2268ff;
 }
 
-.navbar-list a:hover,
-.navbar-list .current a {
-    color: #ffffff;
-    transform: scale(1.2, 1.2);
+.menu a:hover {
+    transform: scale(1.1, 1.1);
+    color: #2268ff;
 }
 
 .navbar-list a:hover:before,
@@ -373,7 +372,7 @@ ul {
 
 .main-viewing-area {
     display: flex;
-    height: 200vh;
+    height: 100vh;
     min-height: 400px;
     width: auto;
     overflow-y: scroll;
@@ -420,6 +419,7 @@ ul {
         align-items: center space-around;
         justify-content: start;
         padding-top: 0.1em;
+        background-color: transparent;
     }
 }
 
