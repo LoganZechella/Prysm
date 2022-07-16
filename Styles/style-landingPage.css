@@ -12,53 +12,8 @@ body {
 }
 
 .landing-entire-body {
-    background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+    background: linear-gradient(-120deg, #0cc898, #1797d2, #864fe1);
     background-size: cover;
-    -webkit-animation: Background 25s ease infinite;
-    -moz-animation: Background 25s ease infinite;
-    animation: Background 25s ease infinite;
-}
-
-@-webkit-keyframes Background {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@-moz-keyframes Background {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes Background {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
 }
 
 /* Whole Page */
@@ -67,13 +22,8 @@ body {
     position: fixed;
     width: 100%;
     height: 100vh;
-    -webkit-display: flex;
     display: flex;
-    -webkit-flex-direction: column;
     flex-direction: column;
-    /* -webkit-align-items: center; */
-    /* align-items: center; */
-    /* -webkit-justify-content: center; */
     justify-content: center;
     text-align: center;
     filter: saturate(1.6);
@@ -91,10 +41,6 @@ body {
     padding: 0 1em 0 1em;
     backdrop-filter: brightness(75%);
 }
-
-/* Navbar */
-
-
 
 /* Rest of landing-header Items */
 
