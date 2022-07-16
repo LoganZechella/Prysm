@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to PRYSM</title>
     <link href="../Styles/style-landingPage.css" rel="stylesheet" type="text/css">
-    <link href="Styles/bootstrap.min.css" rel="stylesheet" type="text/html">
     <link href="http://fonts.cdnfonts.com/css/arial-rounded-mt" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/helvetica-rounded-lt-std" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous" defer></script>
-    <script src="Scripts/bootstrap.bundle.min.js" defer></script>
 </head>
 
 <!-- Body -->
@@ -32,6 +30,19 @@
         <div class="hero">
             <h1 class="hero-h1">Welcome to<br>PRYSM</h1>
             <a class="landing-button-signup" href="#">Sign Up</a>
+        </div>
+
+        <div class="login-window">
+            <h2 class="login-window-text">Login to your PRYSM<br> account below</h2>
+            
+            <form action="#">
+                <label for="username" id="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password" id="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" id="submit-btn" value="Login"><br>
+                <input type="button" id="forgot-pw-btn" href="#forgot-password-page" value="Forgot Password">
+            </form>
         </div>
     </main>
 

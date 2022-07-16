@@ -4,4 +4,6 @@ $(".landing-button-signup").hover(function () {
     $(this).toggleClass("is-active");
 });
 
-// Navbar Animations
+// Login Pop-up 
+
+

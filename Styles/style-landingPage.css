@@ -109,3 +109,61 @@ body {
     border: 3px solid rgba(5, 217, 30, 0.379);
     border-radius: 19px;
 }
+
+
+/* Login Window */
+
+.login-window {
+    display: none;
+    /* display: flex; */
+    position: fixed;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+    align-self: center;
+    top: 100px;
+    z-index: 4;
+    border: 2px solid #000;
+    padding-bottom: 1em;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    background-color: #00144195;
+}
+
+.login-window-text {
+    font-size: 40px;
+}
+
+#username {
+    margin-bottom: 0.5em;
+}
+
+#username, #password {
+    font-size: 28px;
+}
+
+#submit-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #000;
+    margin: 1em 0 1em 0;
+    width: 150px;
+    height: 50px;
+    border-radius: 9%;
+    font-size: 22px;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded LT Std", Arial, sans-serif;
+    text-align: center;
+}
+
+#forgot-pw-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #000;
+    margin: 0 0 0 0;
+    width: 125px;
+    height: 30px;
+    border-radius: 9%;
+    font-size: 14px;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded LT Std", Arial, sans-serif;
+    text-align: center;
+}
