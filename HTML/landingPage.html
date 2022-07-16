@@ -22,17 +22,21 @@
             <h1 class="prysm-caps">PRYSM</h1>
         </div>
         <div class="header-login">
-            <a class="landing-login-button" href="#login-page">Login</a>
+            <button onclick="toggleLogin()" type="button" id="login-btn" class="landing-login-btn">Login</button>
         </div>
     </header>
 
     <main class="landing-main">
-        <div class="hero">
+        <div id="hero" class="hero">
             <h1 class="hero-h1">Welcome to<br>PRYSM</h1>
+            <p class="hero-p">The future of personalized event planning.</p>
             <a class="landing-button-signup" href="#">Sign Up</a>
         </div>
 
-        <div class="login-window">
+        <div id="login-window" class="login-window">
+            <button onclick="closeLoginWindow()" type="button" id="close-btn" class="close-btn">
+                <img class="close-glyph" id="close-glyph" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/delete-sign.png"/>
+            </button>
             <h2 class="login-window-text">Login to your PRYSM<br> account below</h2>
             
             <form action="#">
