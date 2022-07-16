@@ -203,9 +203,8 @@ ul {
     border-bottom: 3px solid #2268ff;
 }
 
-.navbar-list a:hover {
-    transform: scale(1.1, 1.1);
-    color: #fff;
+.menu-item a:hover {
+    transform: scale(1.05, 1.05);
 }
 
 .navbar-list a:hover:before,
