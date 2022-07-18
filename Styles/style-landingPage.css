@@ -36,7 +36,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    backdrop-filter: blur(20px) saturate(1.6) brightness(120%);
+    backdrop-filter: blur(20px) saturate(1.6) brightness(150%);
     overflow-y: scroll;
     overflow-x: auto;
 }
@@ -239,7 +239,7 @@ body {
 
 .founders {
     display: flex;
-    
+    flex-direction: column;
 }
 
 .founder-kay {
@@ -247,16 +247,21 @@ body {
     display: flex;
 }
 
-.kay-photo {
+.founder-logan {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.kay-photo, .logan-photo {
     transform: scale(0.5, 0.5);
     border-radius: 3em;
 }
 
-.about-kay {
+.about-kay, .about-logan {
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
     text-shadow: 1px 3px rgba(0, 0, 0, 0.7);
-    padding-right: 2em;
+    padding: 0 2em 0 2em;
 }
