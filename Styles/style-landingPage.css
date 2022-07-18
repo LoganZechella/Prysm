@@ -7,13 +7,22 @@
     --palette-light0: #E4F2FC;
 }
 
+/* Keyframes */
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
 body {
     margin: 0;
 }
 
 .landing-entire-body {
-    background: linear-gradient(-120deg, #0cc898, #1797d2, #864fe1);
+    background-image: url(../Images/Lawrencium.jpeg);
     background-size: cover;
+    background-position: center;
 }
 
 /* Whole Page */
@@ -38,7 +47,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 1em 0 1em;
-    backdrop-filter: brightness(75%);
+    background-color: transparent;
+    backdrop-filter: brightness(100%);
 }
 
 /* Rest of landing-header Items */
@@ -80,6 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 8em;
+    transition: 0.5s ease-in;
 }
 
 .hero-h1 {
@@ -135,7 +146,6 @@ body {
 
 .login-window {
     display: none;
-    /* display: flex; */
     position: fixed;
     flex-direction: column;
     width: 50vw;
@@ -143,11 +153,14 @@ body {
     align-self: center;
     top: 100px;
     z-index: 4;
-    border: 2px solid #000;
+    border: 3px solid rgba(255, 255, 255, 0.705);
+    border-radius: 1em;
     padding-bottom: 1em;
     color: #fff;
     text-shadow: 2px 2px #000;
-    background-color: #00144195;
+    background-color: #ffffff1d;
+    transition: 0.4s ease;
+    animation: fadeIn 1s;
 }
 
 .login-window-text {
@@ -178,11 +191,11 @@ body {
 #submit-btn {
     background-color: transparent;
     color: #fff;
-    border: 1px solid #000;
+    border: 1px solid rgba(255, 255, 255, 0.665);
     margin: 1em 0 1em 0;
     width: 150px;
     height: 50px;
-    border-radius: 9%;
+    border-radius: 0.3em;
     font-size: 22px;
     font-family: "Arial Rounded MT Bold", "Helvetica Rounded LT Std", Arial, sans-serif;
     text-align: center;
@@ -192,13 +205,17 @@ body {
 #forgot-pw-btn {
     background-color: transparent;
     color: #fff;
-    border: 1px solid #000;
+    border: 1px solid rgba(255, 255, 255, 0.665);
     margin: 0 0 0 0;
     width: 125px;
-    height: 30px;
-    border-radius: 9%;
+    height: 35px;
+    border-radius: 0.3em;
     font-size: 14px;
     font-family: "Arial Rounded MT Bold", "Helvetica Rounded LT Std", Arial, sans-serif;
     text-align: center;
     cursor: pointer;
+}
+
+#submit-btn:hover, #forgot-pw-btn:hover {
+    text-decoration: underline;
 }
