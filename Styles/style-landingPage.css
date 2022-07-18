@@ -23,7 +23,7 @@ body {
     background-image: url(../Images/Lawrencium.jpeg);
     background-size: cover;
     background-position: center;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
 }
 
 /* Whole Page */
@@ -91,8 +91,9 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 8em;
-    margin-bottom: 8em;
+    margin-bottom: 0em;
     transition: 0.5s ease-in;
+    height: 100vh;
 }
 
 .hero-h1 {
@@ -130,6 +131,7 @@ body {
     width: 1fr;
     background-color: rgba(89, 88, 88, 0.165);
     border-radius: 19px;
+    cursor: pointer;
 }
 
 .landing-button-signup:hover {
@@ -144,9 +146,9 @@ body {
 }
 
 
-/* Login Window */
+/* Login and Signup Windows */
 
-.login-window {
+.login-window, .signup-window {
     display: none;
     position: fixed;
     flex-direction: column;
@@ -184,11 +186,11 @@ body {
     border: none;
 }
 
-#username {
+#username, #email {
     margin-bottom: 0.5em;
 }
 
-#username, #password {
+#username, #password, #email {
     font-size: 28px;
 }
 
@@ -201,6 +203,20 @@ body {
     height: 50px;
     border-radius: 0.3em;
     font-size: 22px;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded LT Std", Arial, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+#waitlist-add-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.665);
+    margin: 1em 0 1em 0;
+    width: auto;
+    height: 50px;
+    border-radius: 0.5em;
+    font-size: 14px;
     font-family: "Arial Rounded MT Bold", "Helvetica Rounded LT Std", Arial, sans-serif;
     text-align: center;
     cursor: pointer;
@@ -220,8 +236,28 @@ body {
     cursor: pointer;
 }
 
-#submit-btn:hover, #forgot-pw-btn:hover {
+#submit-btn:hover, #forgot-pw-btn:hover, #waitlist-add-btn:hover {
     text-decoration: underline;
+    transform: scale(1.1, 1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.signup-window {
+    padding: 0 1em 0 1em;
+    
+}
+
+.signup-window-text {
+    line-height: 2.5ex;
+}
+
+#waitlist-add-btn {
+    margin-bottom: 2em;
+}
+
+.thankyou-text {
+    display: none;
+    font-size: 28px;
 }
 
 /* About PRYSM Section */
