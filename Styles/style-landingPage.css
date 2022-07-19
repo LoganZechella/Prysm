@@ -14,19 +14,33 @@
     to {opacity: 1;}
 }
 
+@media screen and (max-width: 600px) {
+    .header-login {
+        display: none;
+    }
+    .prysm-caps {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .dropdown-menu {
+        display: none;
+    }
+    
+}
+
+/* Whole Page */
 
 body {
     margin: 0;
 }
 
 .landing-entire-body {
-    background-image: url(../Images/Lawrencium.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
+    background: #474bff;
+    background: -webkit-linear-gradient(227deg, #474bff 0%, #bc48ff 100%);
+    background: linear-gradient(227deg, #474bff 0%, #bc48ff 100%);
 }
-
-/* Whole Page */
 
 .landing-main {
     /* position: fixed; */
@@ -36,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    backdrop-filter: blur(20px) saturate(1.6) brightness(150%);
+    backdrop-filter: saturate(1.6);
     overflow-y: scroll;
     overflow-x: auto;
 }
@@ -45,11 +59,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    width: auto;
     padding: 0 1em 0 1em;
-    background-color: transparent;
-    backdrop-filter: brightness(100%);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Rest of landing-header Items */
@@ -86,6 +100,193 @@ body {
     text-decoration: solid underline;
     transform: scale(1.1, 1.1);
 }
+
+/* Dropdown Menu */ 
+
+.dropdown-menu .menu-container {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    overflow: hidden;
+    transition: all 0.5s ease-out, background 1s ease-out;
+    transition-delay: 0.2s;
+    z-index: 1;
+}
+
+.dropdown-menu .menu-container .burger-container {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dropdown-menu .menu-container .burger-container #burger {
+    width: 18px;
+    height: 8px;
+    position: relative;
+    display: block;
+    margin: -4px auto 0;
+    top: 50%;
+}
+
+.dropdown-menu .menu-container .burger-container #burger .bar {
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: relative;
+    background: #FFF;
+    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition-delay: 0s;
+}
+
+.dropdown-menu .menu-container .burger-container #burger .bar.topBar {
+    transform: translateY(0px) rotate(0deg);
+}
+
+.dropdown-menu .menu-container .burger-container #burger .bar.btmBar {
+    transform: translateY(6px) rotate(0deg);
+}
+
+.dropdown-menu .menu-container .icon {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #FFF;
+    font-size: 22px;
+    left: 50%;
+    transform: translateX(-100%);
+}
+
+.dropdown-menu .menu-container .icon.icon-bag {
+    right: 0;
+    top: 0;
+    left: auto;
+    transform: translateX(0px);
+    transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition-delay: 0.65s;
+}
+
+.dropdown-menu .menu-container ul.menu {
+    position: relative;
+    display: block;
+    padding: 0px 48px 0;
+    list-style: none;
+}
+
+li.menu-item>a:hover {
+    color: #2268ff;
+}
+
+.menu-item>a:hover {
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 1;
+    left: 0;
+    right: 0;
+    border-bottom: 3px solid #2268ff;
+}
+
+.dropdown-menu .menu-container ul.menu li.menu-item {
+    border-bottom: 1px solid #333;
+    margin-top: 5px;
+    transform: scale(1.15) translateY(-30px);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+
+.dropdown-menu .menu-container ul.menu li.menu-item:nth-child(1) {
+    transition-delay: 0.49s;
+}
+
+.dropdown-menu .menu-container ul.menu li.menu-item:nth-child(2) {
+    transition-delay: 0.42s;
+}
+
+.dropdown-menu .menu-container ul.menu li.menu-item:nth-child(3) {
+    transition-delay: 0.35s;
+}
+
+.dropdown-menu .menu-container ul.menu li.menu-item:nth-child(4) {
+    transition-delay: 0.28s;
+}
+
+.dropdown-menu .menu-container ul.menu li.menu-item a {
+    display: block;
+    position: relative;
+    color: #FFF;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 2.35;
+    font-weight: 200;
+    width: 100%;
+}
+
+.dropdown-menu .menu-container.menu-opened {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.704);
+    transition: all 0.3s ease-in, background 0.5s ease-in;
+    transition-delay: 0.25s;
+    z-index: 1;
+    margin: 0;
+}
+
+.dropdown-menu .menu-container.menu-opened .burger-container {
+    transform: rotate(90deg);
+}
+
+.dropdown-menu .menu-container.menu-opened .burger-container #burger .bar {
+    transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition-delay: 0.2s;
+}
+
+.dropdown-menu .menu-container.menu-opened .burger-container #burger .bar.topBar {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.dropdown-menu .menu-container.menu-opened .burger-container #burger .bar.btmBar {
+    transform: translateY(3px) rotate(-45deg);
+}
+
+.dropdown-menu .menu-container.menu-opened ul.menu li.menu-item {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+}
+
+.dropdown-menu .menu-container.menu-opened ul.menu li.menu-item:nth-child(1) {
+    transition-delay: 0.27s;
+}
+
+.dropdown-menu .menu-container.menu-opened ul.menu li.menu-item:nth-child(2) {
+    transition-delay: 0.34s;
+}
+
+.dropdown-menu .menu-container.menu-opened ul.menu li.menu-item:nth-child(3) {
+    transition-delay: 0.41s;
+}
+
+.dropdown-menu .menu-container.menu-opened ul.menu li.menu-item:nth-child(4) {
+    transition-delay: 0.48s;
+}
+
+/* Hero */
 
 .hero {
     display: flex;
@@ -264,12 +465,18 @@ body {
 
 .about-prysm {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 1em 1em 1em 1em;
     color: #fff;
     text-shadow: 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-
+.benefit1, .benefit2, .benefit3 {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 0 1em 0 1em;
+}
 
 /* Founders Section */
 
