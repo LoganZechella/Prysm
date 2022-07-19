@@ -5,6 +5,7 @@ function toggleLogin() {
     document.getElementById("hero").style.display = "none";
     document.getElementById("about-prysm").style.display = "none";
     document.getElementById("login-btn").style.display = "none";
+    document.getElementById("why-prysm").style.display = "none";
     document.getElementById("founders").style.display = "none";
 };
 
@@ -14,6 +15,7 @@ function toggleSignupWindow() {
     document.getElementById("hero").style.display = "none";
     document.getElementById("about-prysm").style.display = "none";
     document.getElementById("login-btn").style.display = "none";
+    document.getElementById("why-prysm").style.display = "none";
     document.getElementById("founders").style.display = "none";
 }
 
