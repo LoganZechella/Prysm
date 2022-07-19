@@ -9,6 +9,7 @@
     <link href="../Styles/style-landingPage.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.cdnfonts.com/css/arial-rounded-mt" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/helvetica-rounded-lt-std" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous" defer></script>
 </head>
@@ -51,7 +52,7 @@
             <button onclick="toggleSignupWindow()" type="button" id="signup-btn" class="landing-button-signup">Sign
                 Up</a>
         </div>
-
+<!-- Login Window -->
         <div id="login-window" class="login-window">
             <button onclick="closeLoginWindow()" type="button" id="close-btn" class="close-btn">
                 <img class="close-glyph" id="close-glyph"
@@ -68,7 +69,7 @@
                 <input type="button" id="forgot-pw-btn" href="#forgot-password-page" value="Forgot Password">
             </form>
         </div>
-
+<!-- Signup Window -->
         <div id="signup-window" class="signup-window">
             <button onclick="closeLoginWindow()" type="button" id="close-btn" class="close-btn">
                 <img class="close-glyph" id="close-glyph"
@@ -88,28 +89,29 @@
                     value="Add me to the waitlist!"><br>
             </form>
         </div>
-
+<!-- About Section -->
+        <div class="why-prysm" id="why-prysm" data-aos="zoom-out-up">
+            <h2 class="why-prysm-text">Why PRYSM?</h2>
+        </div>
         <div class="about-prysm" id="about-prysm">
-            <div class="benefit1">
+            <div class="benefit1" data-aos="zoom-in-right">
                 <p class="benefit1-text">One of the main features of PRYSM is quick and easy personal event
                     recommendations, allowing you to discover new spaces, events, and more.</p>
             </div>
 
-            <div class="benefit2">
+            <div class="benefit2" data-aos="zoom-in-up">
                 <p class="benefit2-text">These benefits also extend to the event hosts that use our platform by way of
                     in-depth analytics that are available exclusively to PRYSM hosts.</p>
             </div>
 
-            <div class="benefit3">
-                <p class="benefit3-text">By providing built-in, fully customizable analytics, event hosts are provided
-                    with detailed insights into their events. Add in the ability to visualize your data on-demand, and
-                    you'll have all the resources you need to expand your outreach and grow your audience, simply by
+            <div class="benefit3" data-aos="zoom-in-left">
+                <p class="benefit3-text">With fully customizable analytics, you'll have all of the resources you need to expand your outreach and grow your audience, simply by
                     using PRYSM.</p>
             </div>
         </div>
-
+<!-- Founders Section -->
         <div class="founders" id="founders">
-            <div class="founder-kay">
+            <div class="founder-kay" data-aos="fade-left">
                 <img src="https://static.wixstatic.com/media/969e3a_1a63f0f7225f4c8c874a6b013072c828~mv2.png/v1/fill/w_360,h_410,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/headshot%202020.png"
                     alt="Kay Meisner, Co-founder and CEO" class="kay-photo">
                 <div class="about-kay">
@@ -119,7 +121,7 @@
                 </div>
             </div>
 
-            <div class="founder-logan">
+            <div class="founder-logan" data-aos="fade-right">
                 <img src="../Images/jlz-headshot.jpg" alt="J. Logan Zechella, Co-founder and CTO" class="logan-photo">
                 <div class="about-logan">
                     <h2 id="logan-title">J. Logan Zechella,<br> Co-Founder and CTO</h2>
@@ -131,7 +133,12 @@
 
     </main>
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+</script>
 
 </body>
 

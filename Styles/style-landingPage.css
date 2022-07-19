@@ -30,6 +30,10 @@
     
 }
 
+@media screen and (max-width: 390px) {
+
+}
+
 /* Whole Page */
 
 body {
@@ -291,10 +295,10 @@ li.menu-item>a:hover {
 .hero {
     display: flex;
     flex-direction: column;
-    margin-top: 8em;
+    margin-top: 4em;
     margin-bottom: 0em;
     transition: 0.5s ease-in;
-    height: 100vh;
+    height: 90vh;
 }
 
 .hero-h1 {
@@ -465,17 +469,35 @@ li.menu-item>a:hover {
 
 .about-prysm {
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: space-evenly;
     padding: 1em 1em 1em 1em;
     color: #fff;
-    text-shadow: 1px 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.why-prysm {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    text-decoration: underline 5px;
+    margin-bottom: 3em;
+}
+
+.why-prysm-text {
+    font-size: 48px;
+    text-shadow: 2px 2px #000;
 }
 
 .benefit1, .benefit2, .benefit3 {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.223);
     backdrop-filter: blur(10px);
-    padding: 0 1em 0 1em;
+    margin: 0 1em 0 1em;
+    padding: 0 0.5em 0 0.5em;
+    border-radius: 1em;
+    width: 33vw;
 }
 
 /* Founders Section */
