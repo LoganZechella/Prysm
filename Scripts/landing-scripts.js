@@ -38,7 +38,7 @@ function closeLoginWindow() {
 // Hamburger Animations
 (function () {
     var burger = document.querySelector('.burger-container'),
-        header = document.querySelector('.menu-container');
+        header = document.querySelector('.dropdown-menu');
 
     burger.onclick = function () {
         header.classList.toggle('menu-opened');

@@ -14,14 +14,21 @@
     to {opacity: 1;}
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
     .header-login {
         display: none;
     }
-    .prysm-caps {
+    .menu-container {
+        display: block;
+    }
+    .header-logo, .prysm-caps {
         display: none;
     }
-    .hero-h {
+    .hero {
+        padding: 0 0.5em 0 0.5em;
+        width: 100vw;
+    }
+    .hero-h1 {
         font-size: 20px;
     }
     .about-prysm {
@@ -51,8 +58,8 @@
     }
 }
 
-@media screen and (min-width: 600px) {
-    .dropdown-menu {
+@media screen and (min-width: 450px) {
+    .menu-container {
         display: none;
     }
     
@@ -77,7 +84,7 @@ body {
 
 .landing-main {
     /* position: fixed; */
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     height: auto;
     display: flex;
@@ -85,7 +92,7 @@ body {
     text-align: center;
     backdrop-filter: saturate(1.6);
     overflow-y: scroll;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .landing-header {
@@ -94,7 +101,7 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    width: auto;
+    width: 100vw;
     min-height: 75px;
     padding: 0 0 0 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -106,9 +113,9 @@ body {
     color: #fff;
 }
 
-.header-logo {
+/* .header-logo {
     display: flex;
-}
+} */
 
 .header-login {
     padding-right: 0.5em;

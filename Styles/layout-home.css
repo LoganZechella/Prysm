@@ -214,6 +214,10 @@ ul {
     bottom: 0;
 }
 
+.navbar-list>li>a:hover {
+    color: #fff;
+}
+
 /* Current Location */
 
 .header-location {
@@ -256,12 +260,7 @@ ul {
     -webkit-overflow-scrolling: touch;
 }
 
-.main-footer {
-    color: #fff;
-    display: none;
-    justify-content: center;
-    background-color: rgba(167, 167, 167, 0.115);
-}
+
 
 .icon-credits {
     display: none;
@@ -553,3 +552,12 @@ figure {
 .card[data-effect="blur"] .card__image img {
     animation-name: blur;
 } 
+
+/* Footer */ 
+
+.main-footer {
+    color: #fff;
+    display: none;
+    justify-content: center;
+    background-color: rgba(167, 167, 167, 0.115);
+}
