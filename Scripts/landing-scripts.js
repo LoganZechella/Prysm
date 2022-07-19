@@ -32,13 +32,14 @@ function closeLoginWindow() {
     document.getElementById("hero").style.display = "flex";
     document.getElementById("about-prysm").style.display = "flex";
     document.getElementById("login-btn").style.display = "block";
+    document.getElementById("why-prysm").style.display = "flex";
     document.getElementById("founders").style.display = "flex";
 };
 
 // Hamburger Animations
 (function () {
     var burger = document.querySelector('.burger-container'),
-        header = document.querySelector('.dropdown-menu');
+        header = document.querySelector('.menu-container');
 
     burger.onclick = function () {
         header.classList.toggle('menu-opened');
