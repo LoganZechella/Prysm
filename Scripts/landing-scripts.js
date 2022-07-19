@@ -6,7 +6,18 @@ function toggleLogin() {
     document.getElementById("about-prysm").style.display = "none";
     document.getElementById("login-btn").style.display = "none";
     document.getElementById("why-prysm").style.display = "none";
+    document.getElementById("founder-heading").style.display = "none";
     document.getElementById("founders").style.display = "none";
+};
+
+// Login Link
+function loginLink() {
+    toggleLogin();
+};
+
+// Login Link
+function signupLink() {
+    toggleSignupWindow();
 };
 
 // Signup Pop-up
@@ -16,6 +27,7 @@ function toggleSignupWindow() {
     document.getElementById("about-prysm").style.display = "none";
     document.getElementById("login-btn").style.display = "none";
     document.getElementById("why-prysm").style.display = "none";
+    document.getElementById("founder-heading").style.display = "none";
     document.getElementById("founders").style.display = "none";
 }
 

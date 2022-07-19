@@ -32,7 +32,6 @@
         flex-direction: column;
         flex-wrap: wrap;
         width: 100vw;
-        margin: 0 0.5em 0 0.5em;
     }
     .why-prysm-text {
         font-size: 32px;
@@ -55,18 +54,30 @@
         justify-content: center;
         align-items: center;
     }
+    .about-kay {
+        padding: 0em 0.5em 0 0.5em;
+    }
+    
+    .about-logan {
+        width: 100vw;
+        padding: 0em 0.5em 0 0.5em;
+    }
 }
 
 @media screen and (min-width: 450px) {
-    .menu-container {
+    .dropdown-nav {
         display: none;
     }
     .about-kay {
         margin-right: 2em;
     }
-    
     .about-logan {
         margin-left: 2em;
+    }
+    .benefit1, .benefit2, .benefit3 {
+        box-shadow: none;
+        margin: 0 0.5em 0.5em 0.1em;
+        font-size: 12px;
     }
     
 }
@@ -439,7 +450,7 @@ li.menu-item>a:hover {
 .close-glyph, #close-btn {
     display: block;
     align-self: flex-end;
-    margin-right: 0.3em;
+    /* margin-right: 0.3em; */
     margin-top: 0.3em;
     background-color: transparent;
     border: none;
