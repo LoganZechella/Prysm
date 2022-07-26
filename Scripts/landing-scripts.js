@@ -46,6 +46,7 @@ function closeLoginWindow() {
     document.getElementById("login-btn").style.display = "block";
     document.getElementById("why-prysm").style.display = "flex";
     document.getElementById("founders").style.display = "flex";
+    document.getElementById("founder-heading").style.display = "flex";
 };
 
 // Hamburger Animations
