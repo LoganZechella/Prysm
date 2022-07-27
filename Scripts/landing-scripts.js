@@ -15,7 +15,7 @@ function loginLink() {
     toggleLogin();
 };
 
-// Login Link
+// Signup Link
 function signupLink() {
     toggleSignupWindow();
 };
@@ -29,13 +29,13 @@ function toggleSignupWindow() {
     document.getElementById("why-prysm").style.display = "none";
     document.getElementById("founder-heading").style.display = "none";
     document.getElementById("founders").style.display = "none";
-}
+};
 
 // Add to Waitlist Button - Text Change
 function toggleThankYou() {
     document.getElementById("signup-window-text").style.display = "none";
     document.getElementById("thankyou-text").style.display = "block";
-}
+};
 
 // Close button
 function closeLoginWindow() {
@@ -58,3 +58,4 @@ function closeLoginWindow() {
         header.classList.toggle('menu-opened');
     }
 }());
+
